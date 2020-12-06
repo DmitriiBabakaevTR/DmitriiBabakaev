@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="36" passed="36">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Calculator actions check (1)" duration-ms="16" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+    <groups>
+    </groups>
+    <test name="Sum and sub actions test" duration-ms="16" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+      <class name="hw1.SubTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@67784306]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@67784306]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@67784306]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@67784306]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@67784306]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@67784306]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@67784306]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@67784306]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@67784306]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@67784306]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@67784306]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@67784306]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@67784306]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@67784306]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@67784306]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.SubTest -->
+      <class name="hw1.SumTest">
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@185d8b6]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@185d8b6]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@185d8b6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@185d8b6]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@185d8b6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@185d8b6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@185d8b6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@185d8b6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@185d8b6]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@185d8b6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@185d8b6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@185d8b6]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@185d8b6]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@185d8b6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@185d8b6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.SumTest -->
+    </test> <!-- Sum and sub actions test -->
+  </suite> <!-- Calculator actions check (1) -->
+  <suite name="Calculator actions check (0)" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+    <groups>
+    </groups>
+    <test name="Multi and div actions test" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+      <class name="hw1.DivTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@5f9d02cb]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@5f9d02cb]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@5f9d02cb]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@5f9d02cb]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.DivTest -->
+      <class name="hw1.MultiTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@370736d9]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@370736d9]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@370736d9]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@370736d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@370736d9]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@370736d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@370736d9]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@370736d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@370736d9]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@370736d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@370736d9]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@370736d9]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@370736d9]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@370736d9]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@370736d9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.MultiTest -->
+    </test> <!-- Multi and div actions test -->
+  </suite> <!-- Calculator actions check (0) -->
+  <suite name="Calculator actions check" duration-ms="44" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+    <groups>
+    </groups>
+    <test name="All actions" duration-ms="44" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+      <class name="hw1.DivTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@49993335]" name="setUp" is-config="true" duration-ms="11" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@49993335]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@49993335]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@49993335]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@49993335]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.DivTest@49993335]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.DivTest@49993335]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@49993335]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+        <test-method status="PASS" signature="dataProviderDivTest(long, long, long)[pri:0, instance:hw1.DivTest@49993335]" name="dataProviderDivTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="DivDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderDivTest -->
+      </class> <!-- hw1.DivTest -->
+      <class name="hw1.SubTest">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@2d928643]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@2d928643]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@2d928643]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@2d928643]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@2d928643]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@2d928643]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@2d928643]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSubTest(long, long, long)[pri:0, instance:hw1.SubTest@2d928643]" name="dataProviderSubTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SubDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSubTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@2d928643]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SubTest@2d928643]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SubTest@2d928643]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.SubTest -->
+      <class name="hw1.MultiTest">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@5025a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@5025a98f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@5025a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@5025a98f]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@5025a98f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@5025a98f]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@5025a98f]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@5025a98f]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@5025a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@5025a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="dataProviderMultiTest(long, long, long)[pri:0, instance:hw1.MultiTest@5025a98f]" name="dataProviderMultiTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="MultiDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderMultiTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.MultiTest@5025a98f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@5025a98f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@5025a98f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.MultiTest@5025a98f]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- hw1.MultiTest -->
+      <class name="hw1.SumTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@6adede5]" name="setUp" is-config="true" duration-ms="16" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@6adede5]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@6adede5]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@6adede5]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@6adede5]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@6adede5]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@6adede5]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@6adede5]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@6adede5]" name="tearDown" is-config="true" duration-ms="6" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@6adede5]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@6adede5]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@6adede5]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hw1.SumTest@6adede5]" name="setUp" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dataProviderSumTest(double, double, double)[pri:0, instance:hw1.SumTest@6adede5]" name="dataProviderSumTest" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" data-provider="SumDataTest" finished-at="2020-12-07T01:12:21 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderSumTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hw1.SumTest@6adede5]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-07T01:12:21 MSK" finished-at="2020-12-07T01:12:21 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hw1.SumTest -->
+    </test> <!-- All actions -->
+  </suite> <!-- Calculator actions check -->
+</testng-results>
