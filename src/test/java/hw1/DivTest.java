@@ -18,7 +18,6 @@ public class DivTest extends AbstractCalcTest{
 
     @Test(dataProvider="DivDataTest")
     public void dataProviderDivTest(long a, long b, long expected){
-
         double actual = calculator.div(a,b);
         assertEquals(actual,expected);
     }

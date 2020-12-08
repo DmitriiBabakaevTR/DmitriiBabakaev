@@ -4,7 +4,6 @@
         <classes>
             <class name="hw1.MultiTest"/>
             <class name="hw1.DivTest"/>
-
         </classes>
     </test>
 </suite>

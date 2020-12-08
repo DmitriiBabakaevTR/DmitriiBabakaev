@@ -19,7 +19,6 @@ public class MultiTest extends AbstractCalcTest {
 
     @Test(dataProvider="MultiDataTest")
     public void dataProviderMultiTest(long a, long b, long expected){
-
         double actual = calculator.mult(a,b);
         assertEquals(actual,expected);
     }

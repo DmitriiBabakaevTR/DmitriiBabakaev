@@ -20,7 +20,6 @@ public class SubTest extends AbstractCalcTest {
 
     @Test(dataProvider = "SubDataTest")
     public void dataProviderSubTest(long a, long b, long expected) {
-
         double actual = calculator.sub(a, b);
         assertEquals(actual, expected);
 

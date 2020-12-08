@@ -19,7 +19,6 @@ public class SumTest extends AbstractCalcTest {
 
     @Test(dataProvider="SumDataTest")
     public void dataProviderSumTest(double a, double b, double expected){
-
         double actual = calculator.sum(a,b);
         assertEquals(actual,expected,0.00001);
     }

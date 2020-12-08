@@ -4,7 +4,6 @@
         <classes>
             <class name="hw1.SumTest"/>
             <class name="hw1.SubTest"/>
-
         </classes>
     </test>
 </suite>
