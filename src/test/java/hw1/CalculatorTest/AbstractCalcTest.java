@@ -1,19 +1,19 @@
 package hw1.CalculatorTest;
 
 import com.epam.tat.module4.Calculator;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 public abstract class AbstractCalcTest {
 
     protected Calculator calculator;
 
-    @BeforeMethod
+    @BeforeSuite
     public void setUp() {
         calculator = new Calculator();
     }
 
-    @AfterMethod
+    @AfterSuite
     public void tearDown() {
         calculator = null;
     }

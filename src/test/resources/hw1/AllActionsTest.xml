@@ -1,11 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Calculator actions check">
-    <test name="All actions">
-        <classes>
-            <class name="hw1.CalculatorTest.SumTest"/>
-            <class name="hw1.CalculatorTest.SubTest"/>
-            <class name="hw1.CalculatorTest.MultiTest"/>
-            <class name="hw1.CalculatorTest.DivTest"/>
-        </classes>
-    </test>
+<suite name="All calculator actions check">
+        <suite-files>
+            <suite-file path="MultiAndDivActionsTest.xml"/>
+            <suite-file path="SumAndSubActionsTest.xml"/>
+        </suite-files>
 </suite>
