@@ -33,6 +33,37 @@
 
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+            <my.xml.files>${project.basedir}/src/test/resources/hw1/SumAndSubActionsTest.xml/</my.xml.files>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>multiAndDiv</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <my.xml.files>${project.basedir}/src/test/resources/hw1/MultiAndDivActionsTest.xml/</my.xml.files>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>all</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <my.xml.files>${project.basedir}/src/test/resources/hw1/AllActionsTest.xml/</my.xml.files>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -53,9 +84,8 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${project.basedir}/src/test/resources/hw1/AllActionsTest.xml/</suiteXmlFile>
-                        <suiteXmlFile>${project.basedir}/src/test/resources/hw1/MultiAndDivActionsTest.xml/</suiteXmlFile>
-                        <suiteXmlFile>${project.basedir}/src/test/resources/hw1/SumAndSubActionsTest.xml/</suiteXmlFile>
+                        <suiteXmlFile>${my.xml.files}</suiteXmlFile>
+
                     </suiteXmlFiles>
                 </configuration>
 
