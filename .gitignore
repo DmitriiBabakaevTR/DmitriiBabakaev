@@ -1,6 +1,4 @@
 /.idea/
 /lib/
 /target/
-homework1.iml
-
-
+*.iml
