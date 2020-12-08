@@ -1,4 +1,4 @@
-package hw1;
+package hw1.CalculatorTest;
 
 import com.epam.tat.module4.Calculator;
 import org.testng.annotations.AfterMethod;

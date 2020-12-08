@@ -2,10 +2,10 @@
 <suite name="Calculator actions check">
     <test name="All actions">
         <classes>
-            <class name="hw1.SumTest"/>
-            <class name="hw1.SubTest"/>
-            <class name="hw1.MultiTest"/>
-            <class name="hw1.DivTest"/>
+            <class name="hw1.CalculatorTest.SumTest"/>
+            <class name="hw1.CalculatorTest.SubTest"/>
+            <class name="hw1.CalculatorTest.MultiTest"/>
+            <class name="hw1.CalculatorTest.DivTest"/>
         </classes>
     </test>
 </suite>

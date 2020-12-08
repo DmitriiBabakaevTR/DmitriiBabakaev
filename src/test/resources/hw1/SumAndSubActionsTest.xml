@@ -2,8 +2,8 @@
 <suite name="Calculator actions check">
     <test name="Sum and sub actions test">
         <classes>
-            <class name="hw1.SumTest"/>
-            <class name="hw1.SubTest"/>
+            <class name="hw1.CalculatorTest.SumTest"/>
+            <class name="hw1.CalculatorTest.SubTest"/>
         </classes>
     </test>
 </suite>
