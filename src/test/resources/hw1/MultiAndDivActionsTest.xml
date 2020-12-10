@@ -2,8 +2,8 @@
 <suite name="Calculator actions check">
     <test name="Multi and div actions test">
         <classes>
-            <class name="hw1.CalculatorTest.MultiTest"/>
-            <class name="hw1.CalculatorTest.DivTest"/>
+            <class name="hw1.calculatorTest.MultiTest"/>
+            <class name="hw1.calculatorTest.DivTest"/>
         </classes>
     </test>
 </suite>

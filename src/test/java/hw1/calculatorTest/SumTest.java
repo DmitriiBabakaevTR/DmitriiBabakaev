@@ -1,4 +1,4 @@
-package hw1.CalculatorTest;
+package hw1.calculatorTest;
 
 import hw1.dataProviders.SumDataProvider;
 import org.testng.annotations.Test;

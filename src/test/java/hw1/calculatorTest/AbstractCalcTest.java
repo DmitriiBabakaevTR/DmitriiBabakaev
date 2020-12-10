@@ -1,10 +1,8 @@
-package hw1.CalculatorTest;
+package hw1.calculatorTest;
 
 import com.epam.tat.module4.Calculator;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 
 public abstract class AbstractCalcTest {
 
