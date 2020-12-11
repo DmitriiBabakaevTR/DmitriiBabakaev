@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Calculator actions check">
+    <test name="Multi and div actions test">
+        <classes>
+            <class name="hw1.calculatorTest.MultiTest"/>
+            <class name="hw1.calculatorTest.DivTest"/>
+        </classes>
+    </test>
+</suite>
