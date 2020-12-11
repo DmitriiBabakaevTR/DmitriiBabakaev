@@ -26,7 +26,7 @@
             <artifactId>Calculator</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${basedir}/src/test/resources/calculator-1.0.jar/</systemPath>
+            <systemPath>${basedir}/src/test/resources/calculator/calculator-1.0.jar/</systemPath>
         </dependency>
     </dependencies>
 
