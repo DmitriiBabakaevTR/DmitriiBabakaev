@@ -47,7 +47,7 @@ public class Exercise1 {
         searchInput = driver.findElement(By.id("login-button"));
         searchInput.click();
 
-        /* Assert that Username is loggined */
+        /* Assert that Username is logged */
         soft.assertEquals(driver.findElement(By.id("user-name")).getText(),"ROMAN IOVLEV", "Invalid user!");
 
         /* Assert that items are displayed */

@@ -49,7 +49,7 @@ public class Exercise2 {
         searchInput = driver.findElement(By.id("login-button"));
         searchInput.click();
 
-        /* Assert that Username is loggined */
+        /* Assert that Username is logged */
         soft.assertEquals(driver.findElement(By.id("user-name")).getText(),"ROMAN IOVLEV", "Invalid user!");
 
         /* Open through the header menu Service -> Different Elements Page */
@@ -83,7 +83,7 @@ public class Exercise2 {
         WebElement searchColor = driver.findElement(By.xpath("//option[text()='Yellow']"));
         searchColor.click();
 
-        /* Assert that valid radio is selected */
+        /* Assert that valid color is selected */
         soft.assertTrue(driver.findElement(By.xpath("//option[text()='Yellow']")).isDisplayed(),"Yellow color is not selected!");
 
         /* Assert that checkboxes have individual log row and value is corresponded to the status of checkboxes */
