@@ -2,8 +2,8 @@
 <suite name="BothExercisesTest">
     <test name="Ex.1 and ex.2 test">
         <classes>
-            <class name="hw2.ex1.Exercise1"/>
-            <class name="hw2.ex2.Exercise2"/>
+            <class name="hw2.ex1.FirstExerciseTestRun"/>
+            <class name="hw2.ex2.SecondExerciseTestRun"/>
         </classes>
     </test>
 </suite>
