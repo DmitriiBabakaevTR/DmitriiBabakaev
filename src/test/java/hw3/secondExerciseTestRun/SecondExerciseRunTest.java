@@ -30,7 +30,7 @@ public class SecondExerciseRunTest extends BaseTest {
         differentElementsPage.openDiffElPage();
 
         /* Assert that the valid page is opened */
-        soft.assertEquals(driver.getCurrentUrl(), "https://jdi-testing.github.io/jdi-light/different-elements.html", "Wrong URL!");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://jdi-testing.github.io/jdi-light/different-elements.html", "Wrong URL!");
 
         /* Select checkboxes */
         differentElementsPage.selectWaterAndWindCheckboxes();
