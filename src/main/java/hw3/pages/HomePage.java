@@ -38,7 +38,7 @@ public class HomePage extends AbstractPage {
         return indexPageImagesWithTextPageElement;
     }
 
-    public LeftSideMenuElement getLeftSideMenuElement(){
+    public LeftSideMenuElement getLeftSideMenuElement() {
         return leftSideMenuElement;
     }
 

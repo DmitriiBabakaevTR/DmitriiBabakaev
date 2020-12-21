@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class IndexPageImagesWithTextPageElement{
 
-
-
     @FindBy(css = ".icon-practise")
     public WebElement microscopeImage;
 

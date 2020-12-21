@@ -3,10 +3,7 @@ package hw3.pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 public class HeaderPageElements {
-
 
     @FindBy(xpath = "//a[contains(@href, '#')]")
     public WebElement searchButton;
@@ -34,5 +31,4 @@ public class HeaderPageElements {
 
     @FindBy(xpath = "//a[text()='Metals & Colors']")
     public WebElement metalsColorsItem;
-
 }
