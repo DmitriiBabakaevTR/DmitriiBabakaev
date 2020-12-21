@@ -1,21 +1,27 @@
-package hw3.ex2.pages;
+package hw3.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
 public class DifferentElementsPage extends AbstractPage {
+
+    private final RightSideBarElement rightSideBarElement;
+
     public DifferentElementsPage(WebDriver driver) {
         super(driver);
+        rightSideBarElement = new RightSideBarElement();
+        PageFactory.initElements(driver, rightSideBarElement);
     }
 
     @FindBy(xpath = "//a[contains(text(),'Service')]")
-    WebElement headerService;
+    public WebElement headerService;
 
     @FindBy(xpath = "//a[contains(@href,'different-elements')]")
-    WebElement diffElements;
+    public WebElement diffElements;
 
     @FindBy(xpath = "//input[@type='checkbox']")
     public List<WebElement> checkBoxes;
@@ -24,23 +30,14 @@ public class DifferentElementsPage extends AbstractPage {
     public List<WebElement> radioSelen;
 
     @FindBy(xpath = "//select")
-    WebElement colorsDropDown;
+    public WebElement colorsDropDown;
 
     @FindBy(xpath = "//option[text()='Yellow']")
     public WebElement yellowColor;
 
-    @FindBy(xpath = "//li[contains(text(), 'Water')]")
-    public WebElement waterLog;
-
-    @FindBy(xpath = "//li[contains(text(), 'Wind')]")
-    public WebElement windLog;
-
-    @FindBy(xpath = "//li[contains(text(), 'metal')]")
-    public WebElement metalRadioLog;
-
-    @FindBy(xpath = "//li[contains(text(), 'Colors')]")
-    public WebElement colorsLog;
-
+    public RightSideBarElement getRightSideBarElement() {
+        return rightSideBarElement;
+    }
 
     public void openDiffElPage() {
         headerService.click();

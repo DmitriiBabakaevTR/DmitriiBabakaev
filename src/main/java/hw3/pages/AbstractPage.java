@@ -1,4 +1,4 @@
-package hw3.ex1.pages;
+package hw3.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
