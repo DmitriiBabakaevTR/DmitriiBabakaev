@@ -1,5 +1,6 @@
 package hw3.pages;
 
+import hw3.pages.poElements.RightSideBarElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,29 +12,48 @@ public class DifferentElementsPage extends AbstractPage {
 
     private final RightSideBarElement rightSideBarElement;
 
+    @FindBy(xpath = "//a[contains(text(),'Service')]")
+    private WebElement headerService;
+
+    @FindBy(xpath = "//a[contains(@href,'different-elements')]")
+    private WebElement diffElements;
+
+    @FindBy(css = "label:nth-child(1) > input[type=checkbox]")
+    private WebElement waterCheckboxe;
+
+    @FindBy(css = "label:nth-child(3) > input[type=checkbox]")
+    private WebElement windCheckboxe;
+
+    @FindBy(css = "label.label-radio > input")
+    private List<WebElement> radioSelen;
+
+    @FindBy(xpath = "//select")
+    private WebElement colorsDropDown;
+
+    @FindBy(xpath = "//option[text()='Yellow']")
+    private WebElement yellowColor;
+
     public DifferentElementsPage(WebDriver driver) {
         super(driver);
         rightSideBarElement = new RightSideBarElement();
         PageFactory.initElements(driver, rightSideBarElement);
     }
 
-    @FindBy(xpath = "//a[contains(text(),'Service')]")
-    public WebElement headerService;
+    public WebElement getWaterCheckboxe() {
+        return waterCheckboxe;
+    }
 
-    @FindBy(xpath = "//a[contains(@href,'different-elements')]")
-    public WebElement diffElements;
+    public WebElement getWindCheckboxe() {
+        return windCheckboxe;
+    }
 
-    @FindBy(xpath = "//input[@type='checkbox']")
-    public List<WebElement> checkBoxes;
+    public List<WebElement> getRadioSelen() {
+        return radioSelen;
+    }
 
-    @FindBy(css = "label.label-radio > input")
-    public List<WebElement> radioSelen;
-
-    @FindBy(xpath = "//select")
-    public WebElement colorsDropDown;
-
-    @FindBy(xpath = "//option[text()='Yellow']")
-    public WebElement yellowColor;
+    public WebElement getYellowColor() {
+        return yellowColor;
+    }
 
     public RightSideBarElement getRightSideBarElement() {
         return rightSideBarElement;
@@ -45,8 +65,8 @@ public class DifferentElementsPage extends AbstractPage {
     }
 
     public void selectWaterAndWindCheckboxes() {
-        checkBoxes.get(0).click();
-        checkBoxes.get(2).click();
+        waterCheckboxe.click();
+        windCheckboxe.click();
     }
 
     public void selectSelenRadio() {

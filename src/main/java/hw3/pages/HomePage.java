@@ -1,5 +1,8 @@
 package hw3.pages;
 
+import hw3.pages.poElements.HeaderPageElements;
+import hw3.pages.poElements.IndexPageImagesWithTextPageElement;
+import hw3.pages.poElements.LeftSideMenuElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +14,15 @@ public class HomePage extends AbstractPage {
     private final IndexPageImagesWithTextPageElement indexPageImagesWithTextPageElement;
     private final LeftSideMenuElement leftSideMenuElement;
 
+    @FindBy(id = "frame")
+    private WebElement iframe;
+
+    @FindBy(id = "frame-button")
+    private WebElement frameButton;
+
+    @FindBy(xpath = "//h3[contains(text(),'EPAM')]")
+    private WebElement textToCheckFocus;
+
     public HomePage(WebDriver driver) {
         super(driver);
         headerPageElements = new HeaderPageElements();
@@ -21,14 +33,17 @@ public class HomePage extends AbstractPage {
         PageFactory.initElements(driver, leftSideMenuElement);
     }
 
-    @FindBy(id = "frame")
-    public WebElement iframe;
+    public WebElement getIframe() {
+        return iframe;
+    }
 
-    @FindBy(id = "frame-button")
-    public WebElement frameButton;
+    public WebElement getFrameButton() {
+        return frameButton;
+    }
 
-    @FindBy(xpath = "//h3[contains(text(),'EPAM')]")
-    public WebElement textToCheckFocus;
+    public WebElement getTextToCheckFocus() {
+        return textToCheckFocus;
+    }
 
     public HeaderPageElements getHeaderPageElements() {
         return headerPageElements;
@@ -43,12 +58,10 @@ public class HomePage extends AbstractPage {
     }
 
     public void loggIn(String user, String pass) {
-        getHeaderPageElements().searchButton.click();
-        getHeaderPageElements().inputName.click();
-        getHeaderPageElements().inputName.sendKeys(user);
-        getHeaderPageElements().inputPass.click();
-        getHeaderPageElements().inputPass.sendKeys(pass);
-        getHeaderPageElements().enterButton.click();
+        getHeaderPageElements().getSearchButton().click();
+        getHeaderPageElements().getInputName().sendKeys(user);
+        getHeaderPageElements().getInputPass().sendKeys(pass);
+        getHeaderPageElements().getEnterButton().click();
     }
 
     public void switchToFrame() {
