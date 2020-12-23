@@ -32,10 +32,10 @@ public abstract class BaseTest {
         Assert.assertEquals(homePage.getHeaderPageElements().getUserNameText().getText(), "ROMAN IOVLEV", "Invalid user!");
     }
 
-    protected String getTitle(){
+    private String getTitle(){
         return driver.getTitle();
     }
-    protected String getURL(){
+    private String getURL(){
         return driver.getCurrentUrl();
     }
 
