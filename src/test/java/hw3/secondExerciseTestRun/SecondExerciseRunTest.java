@@ -21,14 +21,14 @@ public class SecondExerciseRunTest extends BaseTest {
         differentElementsPage.selectWaterAndWindCheckboxes();
 
         /* Assert that valid checkboxes are selected */
-        soft.assertTrue(differentElementsPage.getWaterCheckboxe().isSelected(),"Checkbox 'Water' is not selected!");
-        soft.assertTrue(differentElementsPage.getWindCheckboxe().isSelected(),"Checkbox 'Wind' is not selected!");
+        soft.assertTrue(differentElementsPage.getWaterCheckbox().isSelected(),"Checkbox 'Water' is not selected!");
+        soft.assertTrue(differentElementsPage.getWindCheckbox().isSelected(),"Checkbox 'Wind' is not selected!");
 
         /* Select radio */
         differentElementsPage.selectSelenRadio();
 
         /* Assert that valid radio is selected */
-        soft.assertTrue(differentElementsPage.getRadioSelen().get(3).isSelected(),"Radio 'Selen' is not selected!");
+        soft.assertTrue(differentElementsPage.getRadioSelen().isSelected(),"Radio 'Selen' is not selected!");
 
         /* Select Yellow in dropdown */
         differentElementsPage.selectYellowColor();

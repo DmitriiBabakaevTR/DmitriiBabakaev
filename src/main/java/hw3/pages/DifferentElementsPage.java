@@ -18,14 +18,14 @@ public class DifferentElementsPage extends AbstractPage {
     @FindBy(xpath = "//a[contains(@href,'different-elements')]")
     private WebElement diffElements;
 
-    @FindBy(css = "label:nth-child(1) > input[type=checkbox]")
-    private WebElement waterCheckboxe;
+    @FindBy(xpath = "//label[contains(. ,'Water')]/input")
+    private WebElement waterCheckbox;
 
-    @FindBy(css = "label:nth-child(3) > input[type=checkbox]")
-    private WebElement windCheckboxe;
+    @FindBy(xpath = "//label[contains(. ,'Wind')]/input")
+    private WebElement windCheckbox;
 
-    @FindBy(css = "label.label-radio > input")
-    private List<WebElement> radioSelen;
+    @FindBy(xpath = "//label[contains(. ,'Selen')]/input")
+    private WebElement radioSelen;
 
     @FindBy(xpath = "//select")
     private WebElement colorsDropDown;
@@ -39,15 +39,15 @@ public class DifferentElementsPage extends AbstractPage {
         PageFactory.initElements(driver, rightSideBarElement);
     }
 
-    public WebElement getWaterCheckboxe() {
-        return waterCheckboxe;
+    public WebElement getWaterCheckbox() {
+        return waterCheckbox;
     }
 
-    public WebElement getWindCheckboxe() {
-        return windCheckboxe;
+    public WebElement getWindCheckbox() {
+        return windCheckbox;
     }
 
-    public List<WebElement> getRadioSelen() {
+    public WebElement getRadioSelen() {
         return radioSelen;
     }
 
@@ -65,12 +65,12 @@ public class DifferentElementsPage extends AbstractPage {
     }
 
     public void selectWaterAndWindCheckboxes() {
-        waterCheckboxe.click();
-        windCheckboxe.click();
+        waterCheckbox.click();
+        windCheckbox.click();
     }
 
     public void selectSelenRadio() {
-        radioSelen.get(3).click();
+        radioSelen.click();
     }
 
     public void selectYellowColor() {
