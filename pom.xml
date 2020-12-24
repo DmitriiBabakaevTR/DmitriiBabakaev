@@ -12,6 +12,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <aspectj.version>1.8.10</aspectj.version>
     </properties>
 
     <dependencies>
@@ -42,6 +43,19 @@
             <version>4.2.2</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.13.7</version>
+            <scope>test</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.qameta.allure</groupId>-->
+<!--            <artifactId>allure-java-commons</artifactId>-->
+<!--            <version>2.13.7</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <profiles>
@@ -88,10 +102,20 @@
         <profile>
             <id>hw3</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <my.xml.files>${project.basedir}/src/test/resources/hw3/suite/SuiteFile.xml/</my.xml.files>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>hw4</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <my.xml.files>${project.basedir}/src/test/resources/hw4/suite/SuiteFile.xml/</my.xml.files>
             </properties>
         </profile>
     </profiles>
@@ -115,7 +139,17 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${my.xml.files}</suiteXmlFile>
                     </suiteXmlFiles>
+<!--                    <argLine>-->
+<!--                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+<!--                    </argLine>-->
                 </configuration>
+                <dependencies>
+<!--                    <dependency>-->
+<!--                        <groupId>org.aspectj</groupId>-->
+<!--                        <artifactId>aspectjweaver</artifactId>-->
+<!--                        <version>1.8.10</version>-->
+<!--                    </dependency>-->
+                </dependencies>
             </plugin>
         </plugins>
     </build>
