@@ -78,10 +78,20 @@
         <profile>
             <id>Both</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <my.xml.files>${project.basedir}/src/test/resources/hw2/BothExercisesSuit.xml/</my.xml.files>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>hw3</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <my.xml.files>${project.basedir}/src/test/resources/hw3/suite/SuiteFile.xml/</my.xml.files>
             </properties>
         </profile>
     </profiles>

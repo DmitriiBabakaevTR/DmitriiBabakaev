@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SuiteFile">
+    <test name="Home page and different elements page test">
+        <classes>
+            <class name="hw3.firstExerciseTestRun.FirstExerciseRunTest"/>
+            <class name="hw3.secondExerciseTestRun.SecondExerciseRunTest"/>
+        </classes>
+    </test>
+</suite>
