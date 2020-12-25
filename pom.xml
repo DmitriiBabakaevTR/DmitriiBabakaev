@@ -142,8 +142,6 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-                    <reportsDirectory>C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\EPAM_trainig1\target\surefire-reports</reportsDirectory>
-
                 </configuration>
                 <dependencies>
                     <dependency>
