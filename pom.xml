@@ -13,6 +13,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aspectj.version>1.8.10</aspectj.version>
+        <assertj-core.version>3.17.2</assertj-core.version>
 
     </properties>
 
@@ -20,7 +21,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.3.0</version>
+            <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
 
@@ -50,6 +51,11 @@
             <artifactId>allure-testng</artifactId>
             <version>2.10.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core.version}</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>io.qameta.allure</groupId>-->
