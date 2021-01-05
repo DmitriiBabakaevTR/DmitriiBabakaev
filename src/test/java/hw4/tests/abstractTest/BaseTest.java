@@ -6,6 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
@@ -20,7 +21,7 @@ public abstract class BaseTest {
     protected SoftAssert soft;
 
     @BeforeClass(alwaysRun = true)
-    protected void SetUp() {
+    protected void SetUp(ITestContext testContext) {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         WebDriverManager.chromedriver().setup();
@@ -29,6 +30,7 @@ public abstract class BaseTest {
         soft = new SoftAssert();
         actionStep = new ActionStep(driver);
         assertionStep = new AssertionStep(driver);
+        testContext.setAttribute("driver", driver);
     }
 
     @AfterClass(alwaysRun = true)

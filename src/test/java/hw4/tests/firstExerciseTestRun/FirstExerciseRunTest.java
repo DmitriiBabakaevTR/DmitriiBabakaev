@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class FirstExerciseRunTest extends BaseTest {
 
-    @Test
+    @Test(description = "Тестирование страницы Home page")
     public void verifyHomePage() {
 
         actionStep.openMainPage();

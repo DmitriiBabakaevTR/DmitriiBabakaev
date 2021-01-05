@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class SecondExerciseRunTest extends BaseTest {
 
-    @Test
+    @Test(description = "Тестирование страницы Different element")
     public void verifyDifferentElementsPage() {
 
         actionStep.openMainPage();
