@@ -46,7 +46,7 @@ public class AssertionStep extends AbstractStep{
 
     @Step("Проверка корректности текста под каждой из четырех картинок")
     public void verifyImagesOnTheIndexPageText(){
-        soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getMicroscopeText().getText(),"To include good practices\n" +
+        soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getMicroscopeText().getText(),"To1 include good practices\n" +
                 "and ideas from successful\n" +
                 "EPAM project", "Invalid text under microscope image!");
         soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getHeadphonesText().getText(),"To be flexible and\n" +
