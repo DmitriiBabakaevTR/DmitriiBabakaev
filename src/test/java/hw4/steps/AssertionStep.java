@@ -3,10 +3,11 @@ package hw4.steps;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 public class AssertionStep extends AbstractStep{
-    public AssertionStep(WebDriver driver) {
-        super(driver);
+    public AssertionStep(WebDriver driver, SoftAssert soft) {
+        super(driver,soft);
     }
 
     @Step("Проверка URL и заголовка сайта")
@@ -30,7 +31,7 @@ public class AssertionStep extends AbstractStep{
 
     @Step("Проверка корректности текста четырех элементов на верхней панели")
     public void verifyHeaderElementsText(){
-        soft.assertEquals(homePage.getHeaderPageElements().getHomeItem().getText(),"HOME", "Invalid text on button 'Home'!");
+        soft.assertEquals(homePage.getHeaderPageElements().getHomeItem().getText(),"HOMEE", "Invalid text on button 'Home'!");
         soft.assertEquals(homePage.getHeaderPageElements().getContactFormItem().getText(),"CONTACT FORM", "Invalid text on button 'Contact form'!");
         soft.assertEquals(homePage.getHeaderPageElements().getServiceItem().getText(),"SERVICE", "Invalid text on button 'Service'!");
         soft.assertEquals(homePage.getHeaderPageElements().getMetalsColorsItem().getText(),"METALS & COLORS", "Invalid text on button 'Metals & Colors'!");
@@ -46,7 +47,7 @@ public class AssertionStep extends AbstractStep{
 
     @Step("Проверка корректности текста под каждой из четырех картинок")
     public void verifyImagesOnTheIndexPageText(){
-        soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getMicroscopeText().getText(),"To1 include good practices\n" +
+        soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getMicroscopeText().getText(),"To include good practices\n" +
                 "and ideas from successful\n" +
                 "EPAM project", "Invalid text under microscope image!");
         soft.assertEquals(homePage.getIndexPageImagesWithTextPageElement().getHeadphonesText().getText(),"To be flexible and\n" +

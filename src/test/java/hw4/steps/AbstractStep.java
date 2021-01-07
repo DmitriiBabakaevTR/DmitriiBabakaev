@@ -8,15 +8,17 @@ import org.testng.asserts.SoftAssert;
 
 public abstract class AbstractStep {
 
+
+
     protected HomePage homePage;
     protected DifferentElementsPage differentElementsPage;
     protected SoftAssert soft;
 
-    protected AbstractStep(WebDriver driver) {
+    protected AbstractStep(WebDriver driver,SoftAssert soft) {
 
         homePage = new HomePage(driver);
         differentElementsPage = new DifferentElementsPage(driver);
-        soft = new SoftAssert();
+        this.soft = soft;
     }
 
     @Step("Открыть HomePage")

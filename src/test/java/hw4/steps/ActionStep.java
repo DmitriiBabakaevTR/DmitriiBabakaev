@@ -3,10 +3,11 @@ package hw4.steps;
 import hw4.config.ConfigProperties;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
+import org.testng.asserts.SoftAssert;
 
 public class ActionStep extends AbstractStep {
-    public ActionStep(WebDriver driver) {
-        super(driver);
+    public ActionStep(WebDriver driver, SoftAssert soft) {
+        super(driver, soft);
     }
 
     private final static String login = ConfigProperties.getProperty("user");

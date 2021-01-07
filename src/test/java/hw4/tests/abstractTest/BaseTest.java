@@ -10,7 +10,6 @@ import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.asserts.SoftAssert;
-
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
@@ -28,8 +27,8 @@ public abstract class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         soft = new SoftAssert();
-        actionStep = new ActionStep(driver);
-        assertionStep = new AssertionStep(driver);
+        actionStep = new ActionStep(driver, soft);
+        assertionStep = new AssertionStep(driver, soft);
         testContext.setAttribute("driver", driver);
     }
 
