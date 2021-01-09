@@ -4,6 +4,7 @@
         <classes>
             <class name="hw4.tests.firstExerciseTestRun.FirstExerciseRunTest"/>
             <class name="hw4.tests.secondExerciseTestRun.SecondExerciseRunTest"/>
+            <class name="hw4.tests.failedTest.FailedRunTest"/>
         </classes>
     </test>
 </suite>

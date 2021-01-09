@@ -5,10 +5,10 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.testng.annotations.Test;
 
+@Feature("Домашняя работа №4, Allure and jenkins")
+@Story("Упражнение №1")
 public class FirstExerciseRunTest extends BaseTest {
 
-    @Feature(value = "Selenium")
-    @Story(value = "Домашняя работа №4")
     @Test(description = "Тестирование страницы Home page")
     public void verifyHomePage() {
 
