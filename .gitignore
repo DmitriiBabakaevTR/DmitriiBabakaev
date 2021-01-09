@@ -3,4 +3,5 @@
 **/*.iml
 **/allure-results
 **/.allure
-*.log
+**/.log
+.allure/allure-2.8.1
