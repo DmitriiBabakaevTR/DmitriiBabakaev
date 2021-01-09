@@ -1,5 +1,6 @@
 package hw4.tests.abstractTest;
 
+import hw4.listeners.AllureListener;
 import hw4.steps.ActionStep;
 import hw4.steps.AssertionStep;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -9,9 +10,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.asserts.SoftAssert;
 import java.util.concurrent.TimeUnit;
 
+@Listeners({AllureListener.class})
 public abstract class BaseTest {
 
     protected WebDriver driver;

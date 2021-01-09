@@ -8,8 +8,6 @@ import org.testng.asserts.SoftAssert;
 
 public abstract class AbstractStep {
 
-
-
     protected HomePage homePage;
     protected DifferentElementsPage differentElementsPage;
     protected SoftAssert soft;

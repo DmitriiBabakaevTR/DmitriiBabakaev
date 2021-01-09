@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 public class SecondExerciseRunTest extends BaseTest {
 
-    @Feature(value = "Проверка страницы различных элементов")
-    @Story(value = "Все шаги для проверки")
+    @Feature(value = "Selenium")
+    @Story(value = "Домашняя работа №4")
     @Test(description = "Тестирование страницы Different element")
     public void verifyDifferentElementsPage() {
 

@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 public class FirstExerciseRunTest extends BaseTest {
 
-    @Feature(value = "Проверка домашней страницы")
-    @Story(value = "Все шаги для проверки")
+    @Feature(value = "Selenium")
+    @Story(value = "Домашняя работа №4")
     @Test(description = "Тестирование страницы Home page")
     public void verifyHomePage() {
 
