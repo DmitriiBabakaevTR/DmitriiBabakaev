@@ -31,7 +31,7 @@ public class AssertionStep extends AbstractStep{
 
     @Step("Проверка корректности текста четырех элементов на верхней панели")
     public void verifyHeaderElementsText(){
-        soft.assertEquals(homePage.getHeaderPageElements().getHomeItem().getText(),"HOMEE", "Invalid text on button 'Home'!");
+        soft.assertEquals(homePage.getHeaderPageElements().getHomeItem().getText(),"HOME", "Invalid text on button 'Home'!");
         soft.assertEquals(homePage.getHeaderPageElements().getContactFormItem().getText(),"CONTACT FORM", "Invalid text on button 'Contact form'!");
         soft.assertEquals(homePage.getHeaderPageElements().getServiceItem().getText(),"SERVICE", "Invalid text on button 'Service'!");
         soft.assertEquals(homePage.getHeaderPageElements().getMetalsColorsItem().getText(),"METALS & COLORS", "Invalid text on button 'Metals & Colors'!");
@@ -131,5 +131,13 @@ public class AssertionStep extends AbstractStep{
     public void verifyDropDownLogAndItsStatus(){
         soft.assertTrue(differentElementsPage.getRightSideBarElement().getColorsLog().isDisplayed(),"The Colors dropdown log is not displayed!");
         soft.assertTrue(differentElementsPage.getRightSideBarElement().getColorsLog().getText().contains("Yellow"),"The Colors dropdown log has invalid value!");
+    }
+
+    @Step("Проверка корректности текста четырех элементов на верхней панели")
+    public void verifyHeaderElementsTextForFailedTest(){
+        soft.assertEquals(homePage.getHeaderPageElements().getHomeItem().getText(),"HOMEE", "Invalid text on button 'Home'!");
+        soft.assertEquals(homePage.getHeaderPageElements().getContactFormItem().getText(),"CONTACT FORM", "Invalid text on button 'Contact form'!");
+        soft.assertEquals(homePage.getHeaderPageElements().getServiceItem().getText(),"SERVICE", "Invalid text on button 'Service'!");
+        soft.assertEquals(homePage.getHeaderPageElements().getMetalsColorsItem().getText(),"METALS & COLORS", "Invalid text on button 'Metals & Colors'!");
     }
 }
