@@ -27,7 +27,7 @@ public class MetalsAndColorsForm extends Form<MetalsColors> {
     public static Dropdown metals;
 
     @FindBy(id = "salad-dropdown")
-    private Button btnOpenVegetablesDropdown;
+    private Button btnThatOpensVegetablesDropdown;
 
     @FindBy(css = "#salad-dropdown  input")
     private Checklist vegetables;
@@ -43,7 +43,7 @@ public class MetalsAndColorsForm extends Form<MetalsColors> {
         }
         color.select(metalsColors.getColor());
         metals.select(metalsColors.getMetals());
-        btnOpenVegetablesDropdown.click();
+        btnThatOpensVegetablesDropdown.click();
         vegetables.select("Vegetables");
         for (int i = 0; i < metalsColors.getVegetables().size(); i++) {
             vegetables.select(metalsColors.getVegetables().get(i));

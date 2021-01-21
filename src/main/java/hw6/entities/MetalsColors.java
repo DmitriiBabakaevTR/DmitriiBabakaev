@@ -92,23 +92,23 @@ public class MetalsColors {
     }
 
     public List<String> resultLogRows(){
-        List<String> results = new ArrayList<>();
-        int sum = Integer.parseInt(this.summary.get(0)) + Integer.parseInt(this.summary.get(1));
-        String veg = "Vegetables: ";
-        for (int i = 0; i < this.vegetables.size() - 1; i++) {
-            veg += this.vegetables.get(i) + ", ";
+        List<String> resultLogs = new ArrayList<>();
+        int sum = Integer.parseInt(summary.get(0)) + Integer.parseInt(summary.get(1));
+        String veg = "";
+        for (int i = 0; i < vegetables.size() - 1; i++) {
+            veg += vegetables.get(i) + ", ";
         }
-        veg += this.vegetables.get(this.vegetables.size() - 1);
-        String el = "Elements: ";
-        for (int i = 0; i < this.elements.size() -1; i++) {
-            el += this.elements.get(i) + ", ";
+        veg += vegetables.get(vegetables.size() - 1);
+        String el = "";
+        for (int i = 0; i < elements.size() -1; i++) {
+            el += elements.get(i) + ", ";
         }
-        el += this.elements.get(this.elements.size() - 1);
-        results.add("Summary: " + sum);
-        results.add(el);
-        results.add("Color: " + this.color);
-        results.add("Metal: " + this.metals);
-        results.add(veg);
-        return results;
+        el += elements.get(elements.size() - 1);
+        resultLogs.add("Summary: " + sum);
+        resultLogs.add("Elements: " + el);
+        resultLogs.add("Color: " + color);
+        resultLogs.add("Metal: " + metals);
+        resultLogs.add("Vegetables: " + veg);
+        return resultLogs;
     }
 }

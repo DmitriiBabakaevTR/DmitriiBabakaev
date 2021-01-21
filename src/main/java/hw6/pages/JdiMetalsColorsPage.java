@@ -25,7 +25,7 @@ public class JdiMetalsColorsPage extends WebPage {
         List<String> expectedRows = metalsColors.resultLogRows();
         List<String> actualRows = new ArrayList<>();
         for (WebElement element : resultRows) {
-            actualRows.add(element.getText().trim());
+            actualRows.add(element.getText());
         }
         Assert.assertEquals(actualRows, expectedRows);
     }
