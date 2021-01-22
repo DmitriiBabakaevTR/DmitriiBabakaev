@@ -1,6 +1,7 @@
 package hw6.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,9 +25,11 @@ public class MetalsColors {
     private String oddRadio;
     private String evenRadio;
 
-    public MetalsColors(){ }
+    public MetalsColors() {
+    }
 
-    public MetalsColors(List<String> elements, String color, String metals, List<String> vegetables, String oddRadio, String evenRadio) {
+    public MetalsColors(List<String> elements, String color, String metals,
+                        List<String> vegetables, String oddRadio, String evenRadio) {
         this.elements = elements;
         this.color = color;
         this.metals = metals;
@@ -91,19 +94,11 @@ public class MetalsColors {
         this.evenRadio = evenRadio;
     }
 
-    public List<String> resultLogRows(){
+    public List<String> resultLogRows() {
         List<String> resultLogs = new ArrayList<>();
         int sum = Integer.parseInt(summary.get(0)) + Integer.parseInt(summary.get(1));
-        String veg = "";
-        for (int i = 0; i < vegetables.size() - 1; i++) {
-            veg += vegetables.get(i) + ", ";
-        }
-        veg += vegetables.get(vegetables.size() - 1);
-        String el = "";
-        for (int i = 0; i < elements.size() -1; i++) {
-            el += elements.get(i) + ", ";
-        }
-        el += elements.get(elements.size() - 1);
+        String veg = String.join(", ",vegetables);
+        String el = String.join(", ",elements);
         resultLogs.add("Summary: " + sum);
         resultLogs.add("Elements: " + el);
         resultLogs.add("Color: " + color);

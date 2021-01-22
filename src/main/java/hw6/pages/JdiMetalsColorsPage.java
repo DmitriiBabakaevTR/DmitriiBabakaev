@@ -7,6 +7,7 @@ import hw6.entities.MetalsColors;
 import hw6.forms.MetalsAndColorsForm;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,15 +19,19 @@ public class JdiMetalsColorsPage extends WebPage {
     public MetalsAndColorsForm metalsAndColorsForm;
 
     public void fillMetalAndColorForm(MetalsColors metalsColors) {
-        metalsAndColorsForm.fillForm(metalsColors);
+        metalsAndColorsForm.submitForm(metalsColors);
     }
 
     public void verifyResultRows(MetalsColors metalsColors) {
         List<String> expectedRows = metalsColors.resultLogRows();
+        Assert.assertEquals(generateListWithActualRows(), expectedRows);
+    }
+
+    public List<String> generateListWithActualRows() {
         List<String> actualRows = new ArrayList<>();
         for (WebElement element : resultRows) {
             actualRows.add(element.getText());
         }
-        Assert.assertEquals(actualRows, expectedRows);
+        return actualRows;
     }
 }

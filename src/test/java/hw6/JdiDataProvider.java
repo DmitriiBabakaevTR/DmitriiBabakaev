@@ -19,6 +19,7 @@ public class JdiDataProvider {
         try {
             ObjectMapper mapper = new ObjectMapper();
             FileInputStream fileInputStream = new FileInputStream(filePath);
+
             HashMap<String, MetalsColors> map = mapper.readValue(fileInputStream, new TypeReference<HashMap<String, MetalsColors>>() {
                     });
             int i = 0;

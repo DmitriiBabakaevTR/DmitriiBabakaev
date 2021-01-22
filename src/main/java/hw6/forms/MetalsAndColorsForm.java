@@ -35,7 +35,7 @@ public class MetalsAndColorsForm extends Form<MetalsColors> {
     @FindBy(id = "submit-button")
     private Button submitBtn;
 
-    public void fillForm(MetalsColors metalsColors){
+    public void submitForm(MetalsColors metalsColors) {
         oddRadio.select(metalsColors.getSummary().get(0));
         evenRadio.select(metalsColors.getSummary().get(1));
         for (int i = 0; i < metalsColors.getElements().size(); i++) {
@@ -49,5 +49,6 @@ public class MetalsAndColorsForm extends Form<MetalsColors> {
             vegetables.select(metalsColors.getVegetables().get(i));
         }
         submitBtn.click();
+
     }
 }

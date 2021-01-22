@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import static com.epam.jdi.light.elements.init.PageFactory.initElements;
 
 public class JdiRunTest {
@@ -16,15 +17,15 @@ public class JdiRunTest {
         initElements(JdiSite.class);
         JdiSite.iOpenHomePage();
         JdiSite.iLoggIn(User.ROMAN);
-        Assert.assertEquals(JdiSite.iGetFullUserName(),User.ROMAN.getFullName());
+        Assert.assertEquals(JdiSite.iGetFullUserName(), User.ROMAN.getFullName());
     }
 
     @Test(dataProviderClass = JdiDataProvider.class, dataProvider = "provideDataSetForMetalColorTest")
-    public void verifyMetalsAndColorsPageWithJdi(MetalsColors metalsColors){
+    public void verifyMetalsAndColorsPageWithJdi(MetalsColors metalsColors) {
         JdiSite.iOpenMetalsAndColorsPage();
         JdiSite.iFillMetalsColorsForm(metalsColors);
         JdiSite.iAssertResultLogs(metalsColors);
-        }
+    }
 
     @AfterSuite
     public void afterSuite() {

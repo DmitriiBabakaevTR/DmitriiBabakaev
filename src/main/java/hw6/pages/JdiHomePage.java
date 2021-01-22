@@ -22,7 +22,7 @@ public class JdiHomePage extends WebPage {
 
     public LoggInForm loggInForm;
 
-    public void loggIn(User user){
+    public void loggIn(User user) {
         userIcon.click();
         loggInForm.login(user);
     }
@@ -31,7 +31,7 @@ public class JdiHomePage extends WebPage {
         return userName.getText();
     }
 
-    public void openMetalsAndColors(){
+    public void openMetalsAndColors() {
         metalsAndColors.click();
     }
 }

@@ -28,15 +28,15 @@ public class JdiSite {
         return jdiHomePage.getUserName();
     }
 
-    public static void iOpenMetalsAndColorsPage(){
+    public static void iOpenMetalsAndColorsPage() {
         jdiHomePage.openMetalsAndColors();
     }
 
-    public static void iFillMetalsColorsForm(MetalsColors metalsColors){
+    public static void iFillMetalsColorsForm(MetalsColors metalsColors) {
         jdiMetalsColorsPage.fillMetalAndColorForm(metalsColors);
     }
 
-    public static void iAssertResultLogs(MetalsColors metalsColors){
+    public static void iAssertResultLogs(MetalsColors metalsColors) {
         jdiMetalsColorsPage.verifyResultRows(metalsColors);
     }
 }
