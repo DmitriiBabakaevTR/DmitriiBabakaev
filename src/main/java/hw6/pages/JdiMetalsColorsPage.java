@@ -13,7 +13,7 @@ import java.util.List;
 
 public class JdiMetalsColorsPage extends WebPage {
 
-    @Css("div.info-panel-section ul.panel-body-list.results li")
+    @Css(".results li")
     public WebList resultRows;
 
     public MetalsAndColorsForm metalsAndColorsForm;
