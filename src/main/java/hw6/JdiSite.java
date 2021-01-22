@@ -16,27 +16,27 @@ public class JdiSite {
     @Url("metals-colors.html")
     public static JdiMetalsColorsPage jdiMetalsColorsPage;
 
-    public static void IOpenHomePage() {
+    public static void iOpenHomePage() {
         jdiHomePage.open();
     }
 
-    public static void ILoggIn(User user) {
+    public static void iLoggIn(User user) {
         jdiHomePage.loggIn(user);
     }
 
-    public static String IGetFullUserName() {
+    public static String iGetFullUserName() {
         return jdiHomePage.getUserName();
     }
 
-    public static void IOpenMetalsAndColorsPage(){
+    public static void iOpenMetalsAndColorsPage(){
         jdiHomePage.openMetalsAndColors();
     }
 
-    public static void IFillMetalsColorsForm(MetalsColors metalsColors){
+    public static void iFillMetalsColorsForm(MetalsColors metalsColors){
         jdiMetalsColorsPage.fillMetalAndColorForm(metalsColors);
     }
 
-    public static void IAssertResultLogs(MetalsColors metalsColors){
+    public static void iAssertResultLogs(MetalsColors metalsColors){
         jdiMetalsColorsPage.verifyResultRows(metalsColors);
     }
 }

@@ -14,16 +14,16 @@ public class JdiRunTest {
     @BeforeSuite(alwaysRun = true)
     static void setUp() {
         initElements(JdiSite.class);
-        JdiSite.IOpenHomePage();
-        JdiSite.ILoggIn(User.ROMAN);
-        Assert.assertEquals(JdiSite.IGetFullUserName(),User.ROMAN.getFullName());
+        JdiSite.iOpenHomePage();
+        JdiSite.iLoggIn(User.ROMAN);
+        Assert.assertEquals(JdiSite.iGetFullUserName(),User.ROMAN.getFullName());
     }
 
     @Test(dataProviderClass = JdiDataProvider.class, dataProvider = "provideDataSetForMetalColorTest")
     public void verifyMetalsAndColorsPageWithJdi(MetalsColors metalsColors){
-        JdiSite.IOpenMetalsAndColorsPage();
-        JdiSite.IFillMetalsColorsForm(metalsColors);
-        JdiSite.IAssertResultLogs(metalsColors);
+        JdiSite.iOpenMetalsAndColorsPage();
+        JdiSite.iFillMetalsColorsForm(metalsColors);
+        JdiSite.iAssertResultLogs(metalsColors);
         }
 
     @AfterSuite
