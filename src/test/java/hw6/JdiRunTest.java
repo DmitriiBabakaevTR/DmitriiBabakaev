@@ -20,7 +20,8 @@ public class JdiRunTest {
         Assert.assertEquals(JdiSite.iGetFullUserName(), User.ROMAN.getFullName());
     }
 
-    @Test(dataProviderClass = JdiDataProvider.class, dataProvider = "provideDataSetForMetalColorTest")
+    @Test(dataProviderClass = JdiDataProvider.class,
+            dataProvider = "provideDataSetForMetalColorTest")
     public void verifyMetalsAndColorsPageWithJdi(MetalsColors metalsColors) {
         JdiSite.iOpenMetalsAndColorsPage();
         JdiSite.iFillMetalsColorsForm(metalsColors);

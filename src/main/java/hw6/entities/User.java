@@ -2,7 +2,8 @@ package hw6.entities;
 
 public class User {
 
-    public static final User ROMAN = new User("Roman", "Jdi1234", "ROMAN IOVLEV");
+    public static final User ROMAN =
+            new User("Roman", "Jdi1234", "ROMAN IOVLEV");
 
     private final String name;
     private final String password;
