@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="JDI">
+    <test name="Jdi Test">
+        <classes>
+            <class name="hw6.JdiRunTest"/>
+        </classes>
+    </test>
+</suite>
