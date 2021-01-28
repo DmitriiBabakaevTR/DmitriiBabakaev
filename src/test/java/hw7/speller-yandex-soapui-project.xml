@@ -373,69 +373,64 @@ declare namespace ns1='http://speller.yandex.net/services/spellservice';
          <spel:text>${#TestCase#FixedWord}</spel:text>\r
       </spel:CheckTextRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="77ad1c0d-18fb-41d2-b685-0b18411013b4"/><con:assertion type="Simple NotContains" id="8e3d324c-1876-40c8-8aaa-a5d9bf2f0841" name="VerifyErrorCode=null"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="c7e0f81a-f343-4269-821b-4186e9aaad0a" name="VerifyThatResponseDoesNotContainWrongWord"><con:configuration><token>wirk</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>testRunner.testCase.setPropertyValue("FixedWord", null)</con:tearDownScript><con:properties><con:property><con:name>IncorrectText</con:name><con:value>I wirk hard</con:value></con:property><con:property><con:name>FixedWord</con:name><con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">work</con:value></con:property><con:property><con:name>WrongWord</con:name><con:value>wirk</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>ErrorCode1</con:name><con:value>code="1"</con:value></con:property><con:property><con:name>ErrorCode2</con:name><con:value>code="2"</con:value></con:property><con:property><con:name>ErrorCode3</con:name><con:value>code="3"</con:value></con:property></con:properties></con:testSuite><con:testSuite id="3b94e3cc-1890-4e4f-a169-183888595440" name="CheckTexts"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="174b79fe-d1d5-472d-8fb4-4e137a209eeb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CheckTextWithDDT" searchProperties="true"><con:settings/><con:testStep type="transfer" name="TransferTempData" id="88d34693-f44e-49e6-855e-b77e098f3173" disabled="true">
-                <con:settings/>
-                <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                    <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
-                        <con:name>WordResponse</con:name>
-                        <con:sourceType>Response</con:sourceType>
-                        <con:sourceStep>CheckText</con:sourceStep>
-                        <con:sourcePath>//*:word[1]</con:sourcePath>
-                        <con:targetType>Temp</con:targetType>
-                        <con:targetStep>#TestCase#</con:targetStep>
-                        <con:upgraded>true</con:upgraded>
-                    </con:transfers>
-                </con:config>
-            </con:testStep><con:testStep type="request" name="CheckText" id="6de1c89c-7db7-4d11-9ae2-967b088f6b1f" disabled="true">
-                <con:settings/>
-                <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                    <con:interface>SpellServiceSoap</con:interface>
-                    <con:operation>checkText</con:operation>
-                    <con:request name="CheckText" id="b18a6993-cd15-47e5-be00-c672966294ae">
-                        <con:settings>
-                            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-                        </con:settings>
-                        <con:encoding>UTF-8</con:encoding>
-                        <con:endpoint>http://speller.yandex.net/services/spellservice</con:endpoint>
-                        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:spel="http://speller.yandex.net/services/spellservice">\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="77ad1c0d-18fb-41d2-b685-0b18411013b4"/><con:assertion type="Simple NotContains" id="8e3d324c-1876-40c8-8aaa-a5d9bf2f0841" name="VerifyErrorCode=null"><con:configuration><token>error</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="c7e0f81a-f343-4269-821b-4186e9aaad0a" name="VerifyThatResponseDoesNotContainWrongWord"><con:configuration><token>wirk</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>testRunner.testCase.setPropertyValue("FixedWord", null)</con:tearDownScript><con:properties><con:property><con:name>IncorrectText</con:name><con:value>I wirk hard</con:value></con:property><con:property><con:name>FixedWord</con:name><con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">work</con:value></con:property><con:property><con:name>WrongWord</con:name><con:value>wirk</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>ErrorCode1</con:name><con:value>code="1"</con:value></con:property><con:property><con:name>ErrorCode2</con:name><con:value>code="2"</con:value></con:property><con:property><con:name>ErrorCode3</con:name><con:value>code="3"</con:value></con:property></con:properties></con:testSuite><con:testSuite id="3b94e3cc-1890-4e4f-a169-183888595440" name="CheckTextsTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c22b8a91-8262-4c1b-80e2-17f8748841c7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CheckTextsFromFile" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="e9f87919-6ab6-47b3-af2a-ce56e343db44"><con:settings/><con:config><script>import jxl.* // import Java Excel API library
+def TestCase = context.testCase
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+File file = new File(projectDir)
+def firstLevelDir = file.getParent()
+def filePath = firstLevelDir + "\\hw7\\StringData.xls"
+
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(filePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+count = PropertiesTestStep.getPropertyValue("Counter").toInteger()
+
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("Total").toString() == "")
+    PropertiesTestStep.setPropertyValue("Total", Sheet1.getRows().toString())
+count++
+
+//Read the Excel test data
+Cell Field1 = Sheet1.getCell(0, count)
+Cell Field2 = Sheet1.getCell(1, count)
+log.info ("Count is " + count.toString() + " InputText : " + Field1.getContents() + " ExpectedResult : " + Field2.getContents())
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step
+PropertiesTestStep.setPropertyValue("InputText", Field1.getContents())
+PropertiesTestStep.setPropertyValue("ExpectedResult", Field2.getContents())
+PropertiesTestStep.setPropertyValue("Counter", count.toString())
+if (count == PropertiesTestStep.getPropertyValue("Total").toInteger() - 1)
+    PropertiesTestStep.setPropertyValue("End", "True")</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="ac640a25-4cff-4134-80f5-7a8937f7be78"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Counter</con:name><con:value>0</con:value></con:property><con:property><con:name>InputText</con:name><con:value/></con:property><con:property><con:name>ExpectedResult</con:name><con:value/></con:property><con:property><con:name>Total</con:name><con:value/></con:property><con:property><con:name>End</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="CheckTextsWithDDT" id="8e1fd6e0-d1a1-474c-b6e1-3030d394f7ec"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SpellServiceSoap</con:interface><con:operation>checkText</con:operation><con:request name="CheckTextsWithDDT" id="60aa02f5-4ba3-4f8d-953e-2bc90d0bad0e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://speller.yandex.net/services/spellservice</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:spel="http://speller.yandex.net/services/spellservice">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <spel:CheckTextRequest>\r
-         <spel:text>${#TestCase#InputText}</spel:text>\r
+         <spel:text>${Properties#InputText}</spel:text>\r
       </spel:CheckTextRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request>
-                        <con:assertion type="Valid HTTP Status Codes" id="abee0b54-8e39-41e4-89cd-270fd7a9cf28" name="Valid HTTP Status Codes">
-                            <con:configuration>
-                                <codes>200</codes>
-                            </con:configuration>
-                        </con:assertion>
-                        <con:assertion type="XPath Match" id="0dc53521-8230-4e1c-ae01-731251162e02" name="VerifyWrongCaseWord"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
-declare namespace ns1='http://speller.yandex.net/services/spellservice';
-//ns1:word</path><content>${#TestCase#WrongCaseWord}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials>
-                            <con:authType>No Authorization</con:authType>
-                        </con:credentials>
-                        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-                        <con:jmsPropertyConfig/>
-                        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
-                        <con:wsrmConfig version="1.2"/>
-                    </con:request>
-                </con:config>
-            </con:testStep><con:testStep type="groovy" name="DDT" id="0d679cd5-c34c-4ce0-8e31-7fd8701d5f96"><con:settings/><con:config><script>import groovy.util.*
-import groovy.json.JsonSlurper
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b9315edc-8e6a-4438-aff8-05fbd639e45c"/><con:assertion type="GroovyScriptAssertion" id="179ef740-00a8-4301-a9ce-a378ecb505df" name="VerifyActualAndExpectedResults"><con:configuration><scriptText>def expected = context.expand('${Properties#ExpectedResult}')
 
-def grUtils = new com.eviware.soapui.support.GroovyUtils(context)
-def projectDir = grUtils.projectPath
-File file = new File(projectDir)
-def fileDir = file.getPath()
-def filePath = fileDir + "\\StringData.csv"
+def xmlObjResp = new XmlSlurper().parseText(messageExchange.getResponseContent())
 
-context.fileReader = new BufferedReader(new FileReader(filePath))
-stringsToRead = context.fileReader.readLines()
-for (int i=0; i&lt;stringsToRead.size(); i++){
-	
-	testRunner.testCase.setPropertyValue("InputText", stringsToRead[i])
-	testRunner.runTestStepByName("CheckText")
-     testRunner.runTestStepByName("TransferTempData")     
-	
-}</script></con:config></con:testStep><con:properties><con:property><con:name>InputText</con:name><con:value>I do not like moscow</con:value></con:property><con:property><con:name>Temp</con:name><con:value>moscow</con:value></con:property><con:property><con:name>WrongCaseWord</con:name><con:value>moscow</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>ErrorCode1</con:name><con:value>code="1"</con:value></con:property><con:property><con:name>ErrorCode2</con:name><con:value>code="2"</con:value></con:property><con:property><con:name>ErrorCode3</con:name><con:value>code="3"</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+def actual = xmlObjResp.Body.CheckTextResponse.SpellResult.error.s
+
+//log.info actual
+//log.info expected
+
+assert actual == expected
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script loop" id="9d62b8c3-615a-43b4-a4dc-a87b1cf89167"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+Stop = PropertiesTestStep.getPropertyValue("End").toString()
+if (Stop=="True")
+    log.info("Exit Groovy Script - DataLoop")
+else
+    testRunner.gotoStepByName("Groovy Script")</script></con:config></con:testStep><con:tearDownScript>
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Counter", "0")
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("InputText", "")
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("ExpectedResult", "")
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Total", "")
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue("End", "")</con:tearDownScript><con:properties/></con:testCase><con:properties><con:property><con:name>ErrorCode1</con:name><con:value>code="1"</con:value></con:property><con:property><con:name>ErrorCode2</con:name><con:value>code="2"</con:value></con:property><con:property><con:name>ErrorCode3</con:name><con:value>code="3"</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
