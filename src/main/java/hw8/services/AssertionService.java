@@ -44,7 +44,7 @@ public class AssertionService {
         return this;
     }
 
-    public void verifyAllIncorrectWord(ResponseDTO[][] response, TextsDTO textsDTO) {
+    public AssertionService verifyAllIncorrectWord(ResponseDTO[][] response, TextsDTO textsDTO) {
 
         if (response.length != 0) {
             IntStream.range(0, response[0].length).forEach(i -> {
@@ -53,7 +53,9 @@ public class AssertionService {
                 String incorrectWord = textsDTO.getWord()[i];
                 assertTrue(list.contains(incorrectWord), "Invalid incorrect words!");
             });
+            return null;
         }
         System.out.println("Something got wrong and service return empty response!");
+        return null;
     }
 }
