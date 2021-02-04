@@ -26,33 +26,22 @@ public class AssertionService {
 
     public AssertionService verifyIncorrectWord(ResponseDTO[] response, TextDTO textDTO) {
 
-        if (response.length != 0) {
-            assertEquals(response[0].getWord(), textDTO.getWord(), "Invalid incorrect word!");
-            return this;
-        }
-        System.out.println("Something got wrong and service return empty response!");
-        return null;
+        assertEquals(response[0].getWord(), textDTO.getWord(), "Invalid incorrect word!");
+        return this;
     }
 
     public AssertionService verifyThatResponseHasFixedWord(ResponseDTO[] response, TextDTO textDTO) {
 
-        if (response.length != 0) {
-            List<String> list = Arrays.asList(response[0].getS());
-            assertTrue(list.contains(textDTO.getS()), "Invalid fixed word!");
-            return this;
-        }
-        System.out.println("Something got wrong and service return empty response!");
-        return null;
+        List<String> list = Arrays.asList(response[0].getS());
+        assertTrue(list.contains(textDTO.getS()), "Invalid fixed word!");
+        return this;
     }
 
     public AssertionService verifyLength(ResponseDTO[] response, TextDTO textDTO) {
 
-        if (response.length != 0) {
-            assertEquals(Integer.parseInt(response[0].getLen()), textDTO.getText().length(), "Invalid length!");
-            return this;
-        }
-        System.out.println("Something got wrong and service return empty response!");
-        return null;
+
+        assertEquals(Integer.parseInt(response[0].getLen()), textDTO.getText().length(), "Invalid length!");
+        return this;
     }
 
     public void verifyAllIncorrectWord(ResponseDTO[][] response, TextsDTO textsDTO) {
