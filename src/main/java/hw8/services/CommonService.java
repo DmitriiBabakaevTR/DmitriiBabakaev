@@ -16,6 +16,7 @@ public class CommonService {
     private final RequestSpecification REQUEST_SPECIFICATION;
 
     public CommonService() {
+
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
         REQUEST_SPECIFICATION = new RequestSpecBuilder()
                 .setBaseUri(ConfigProperties.getProperty("BaseUri"))
@@ -25,11 +26,10 @@ public class CommonService {
     }
 
     public Response getWithParams(String uri, Map<String, Object> params) {
-        RequestSpecification specification = given(REQUEST_SPECIFICATION);
 
+        RequestSpecification specification = given(REQUEST_SPECIFICATION);
         for (Map.Entry<String, Object> param : params.entrySet())
             specification.param(param.getKey(), param.getValue());
-
         return specification.get(uri);
     }
 }
