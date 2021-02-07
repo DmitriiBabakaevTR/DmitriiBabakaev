@@ -30,8 +30,6 @@ public class ActionService extends CommonService {
                 .as(ResponseDTO[].class);
     }
 
-
-
     public Response prepareRequestForCheckTexts(TextsDTO textsDTO) {
         Map<String, Object> map = new HashMap<>();
         map.put("text", textsDTO.getText());

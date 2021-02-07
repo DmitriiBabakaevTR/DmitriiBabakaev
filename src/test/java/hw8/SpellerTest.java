@@ -21,15 +21,40 @@ public class SpellerTest {
     }
 
     @Test(dataProvider = "parsingForCheckTextMethod", dataProviderClass = DataProviderForSpeller.class)
-    public void verifyCheckTextEndpoint(TextDTO testData) {
+    public void verifyCheckTextEndpointForCodeAndLength(TextDTO testData) {
 
         Response response = actionService.prepareRequestForCheckText(testData);
         ResponseDTO[] actualResult = actionService.parseResponseForText(response);
         assertionService
                 .verifyErrorCode(actualResult, testData)
-                .verifyIncorrectWord(actualResult, testData)
-                .verifyThatResponseHasFixedWord(actualResult, testData)
                 .verifyLength(actualResult, testData);
+    }
+
+    @Test(dataProvider = "parsingForCheckTextMethod", dataProviderClass = DataProviderForSpeller.class)
+    public void verifyCheckTextEndpointForIncorrectWordAndFixedWordInResponse(TextDTO testData) {
+
+        Response response = actionService.prepareRequestForCheckText(testData);
+        ResponseDTO[] actualResult = actionService.parseResponseForText(response);
+        assertionService
+                .verifyIncorrectWord(actualResult, testData)
+                .verifyThatResponseHasFixedWord(actualResult, testData);
+    }
+
+    @Test(dataProvider = "parsingForCheckTextMethod", dataProviderClass = DataProviderForSpeller.class)
+    public void verifyCheckTextEndpointJustForCode(TextDTO testData) {
+
+        Response response = actionService.prepareRequestForCheckText(testData);
+        ResponseDTO[] actualResult = actionService.parseResponseForText(response);
+        assertionService.verifyErrorCode(actualResult, testData);
+    }
+
+    @Test(dataProvider = "parsingForCheckTextMethod", dataProviderClass = DataProviderForSpeller.class)
+    public void verifyCheckTextEndpointJustForFixedWordInResponse(TextDTO testData) {
+
+        Response response = actionService.prepareRequestForCheckText(testData);
+        ResponseDTO[] actualResult = actionService.parseResponseForText(response);
+        assertionService.verifyThatResponseHasFixedWord(actualResult, testData);
+
     }
 
     @Test(dataProvider = "parsingForCheckTextsMethod", dataProviderClass = DataProviderForSpeller.class)

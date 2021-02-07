@@ -14,5 +14,13 @@
     "word": "moscow",
     "s": "Moscow",
     "code": "3"
+  },
+  {
+    "text" : "lovve",
+    "lang" : "en",
+    "options" : "0",
+    "word": "lovve",
+    "s": "love",
+    "code": "1"
   }
 ]

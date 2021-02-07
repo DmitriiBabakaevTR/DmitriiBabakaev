@@ -26,8 +26,12 @@ public class AssertionService {
 
     public AssertionService verifyIncorrectWord(ResponseDTO[] response, TextDTO textDTO) {
 
-        assertEquals(response[0].getWord(), textDTO.getWord(), "Invalid incorrect word!");
-        return this;
+        if (response.length != 0) {
+            assertEquals(response[0].getWord(), textDTO.getWord(), "Invalid incorrect word!");
+            return this;
+        }
+        System.out.println("Something got wrong and service return empty response!");
+        return null;
     }
 
     public AssertionService verifyThatResponseHasFixedWord(ResponseDTO[] response, TextDTO textDTO) {
